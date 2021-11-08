@@ -50,12 +50,12 @@
                     <div class="mb-3 mx-5">
                         <label for="create_movie_picture" class="form-label">Movie Poster</label>
                         {{-- <input type="text" class="form-control" id="create_movie_picture" name="movie_picture" required></input> --}}
-                        <input class="form-control" type="file" id="create_movie_picture" name="movie_picture">
+                        <input class="form-control" type="file" id="create_movie_picture" name="movie_picture" required>
                     </div>
                     <div class="mb-3 mx-5">
                         <label for="create_movie_background_picture" class="form-label">Movie Background</label>
                         {{-- <input type="text" class="form-control" id="create_movie_background_picture" name="movie_background_picture" required></input> --}}
-                        <input class="form-control" type="file" id="create_movie_background_picture" name="movie_background_picture">
+                        <input class="form-control" type="file" id="create_movie_background_picture" name="movie_background_picture" required>
                     </div>
                     <div class="mb-3 mx-5">
                         <h2></h2>

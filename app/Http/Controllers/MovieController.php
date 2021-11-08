@@ -56,6 +56,16 @@ class MovieController extends Controller
             // $table->string('movie_genre');
             // $table->string('movie_picture');
             // $table->string('movie_background_picture');
+        $this->validate($request,[
+            'movie_id' => 'required',
+            'movie_title' => 'required',
+            'movie_rating' => 'required',
+            'movie_description' => 'required',
+            'movie_year' => 'required',
+            'movie_genre' => 'required',
+            'movie_picture' => 'required',
+            'movie_background_picture' => 'required'
+        ]);
         Movie::create([
             'movie_id' => $request->movie_id,
             'movie_title' => $request->movie_title,
