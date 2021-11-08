@@ -7,6 +7,7 @@ use App\Models\MovieReview;
 use App\Models\Movie;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\MovieController;
 class MovieReviewController extends Controller
 {
     /**
@@ -107,9 +108,20 @@ class MovieReviewController extends Controller
     public function destroy($id)
     {
         //
+        //Add
+        $movieid = MovieReview::where('moviereview_id', $id)->first()->movie_id;
+        
         $moviereviews = MovieReview::where('moviereview_id', $id);
         $moviereviews->delete();
+
+        // $picture_path = Movie::where('movie_id',$id)->first()->movie_picture;
+        $movies = Movie::where('movie_id', $movieid)->first();
+        // return view('moviesdetail',compact('movies'));
         
-        return back();
+        return view('moviesdetail',compact('movies'));
+        
+        // $movies = Movie::where('movie_id', $movie_id_reference)->first();
+         
     }
+    
 }
