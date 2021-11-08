@@ -4,8 +4,8 @@
 
 @section('main_content')
     
-<div class="homewrapper d-flex flex-row pt-lg-5 pb-lg-5 justify-content-center">
-    <div class="backgroundimagehome"> <img width="100%" height="132.5%" src="https://i.pinimg.com/originals/b9/21/a9/b921a98c5cb5563e347b74c58b5be44f.jpg"></div>     
+<div class="d-flex flex-row pt-lg-5 pb-lg-5 justify-content-center">
+    <div class="backgroundimagehome"> <img width="100%" height="145%" src="https://i.pinimg.com/originals/b9/21/a9/b921a98c5cb5563e347b74c58b5be44f.jpg"></div>     
         <div>
         <img src="https://wallpaperaccess.com/full/862206.jpg" width="300px" height="875px" class="d-flex cardnoroundedborder" >
         </div>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="mb-3 mx-5">
                         <label for="create_movie_id">Movie ID</label>
-                        <input type="text" class="form-control" id="create_movie_id" name="movie_id" value="{{ $movies->movie_id }}" required></input>
+                        <input type="text" class="form-control" id="create_movie_id" name="movie_id" value="{{ $movies->movie_id }}" readonly></input>
                     </div>
                     <div class="mb-3 mx-5">
                         <label for="create_movie_title">Movie Title</label>

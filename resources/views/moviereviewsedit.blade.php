@@ -6,7 +6,7 @@ FilmReviews: Edit a Review for {{ $moviereviews->movies->movie_title }}
 
 @section('main_content')
 
-    <div class="heightdivdetail">
+    <div>
         <div class="backgroundimage">
         <img src="{{ asset('storage/'.$moviereviews->movies->movie_background_picture) }}" class="opacitylow lowbrightness objectfitdetail heightdivdetailimg">
         </div>
