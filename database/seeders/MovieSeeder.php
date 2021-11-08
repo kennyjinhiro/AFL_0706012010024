@@ -22,8 +22,8 @@ class MovieSeeder extends Seeder
             'movie_description'=>'A mysterious force knocks the Moon from its orbit around Earth and sends it hurtling on a collision course with life as we know it. With mere weeks before impact and the world on the brink of annihilation, NASA executive and former astronaut Jo Fowler (Halle Berry) is convinced she has the key to saving us all – but only one astronaut from her past, Brian Harper (Patrick Wilson) and conspiracy theorist K.C. Houseman (John Bradley) believe her. These unlikely heroes will mount an impossible last-ditch mission into space, leaving behind everyone they love, only to find out that our Moon is not what we think it is.',
             'movie_year'=>'2021',
             'movie_genre'=>'Science',
-            'movie_picture'=>'img/XEMTsZywS5OShcvC2F6nzmqdAK4xEzBFa8JppHSO.jpg',
-            'movie_background_picture'=>'img/1VOlqoz9EP0JJxO5SXQhImuiifdLhutn0d9efuzc.jpg'
+            'movie_picture'=>'img/20gxRRahZmlPkZ3xEU8Z9og8c1AFLw3jr1EXLLvS.jpg',
+            'movie_background_picture'=>'img/hopk0OJ5Gcs7GkTaBtB8NeqtTVxalLkJUH1eedmO.jpg'
         ]);
         DB::table('movies')->insert([ 
             'movie_id'=>'MOV002',

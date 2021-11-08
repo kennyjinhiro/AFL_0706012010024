@@ -30,8 +30,8 @@
       </nav>
     @yield("main_content")
     <footer class="mt-auto text-white-50">
-      <div class="card-footer bg-dark text-white text-center fw-bold">
-        © 2021 by Kenny Jinhiro
+      <div class="card-footer bg-dark">
+        <p class="buttonfadeanimation text-white text-center fw-bold">© 2021 by Kenny Jinhiro</p>
       </div>
     </footer>
 </body>
