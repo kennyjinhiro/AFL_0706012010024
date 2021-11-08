@@ -131,7 +131,13 @@ class MovieController extends Controller
      */
     public function destroy($id)
     {
-        //
+        //Table::where('id', 1)->get(['name','surname']);
+        $picture_path = Movie::where('movie_id',$id)->first()->movie_picture;
+        // $picture_path = Movie::select('movie_picture')->where('movie_id', $id)->get();
+        $background_picture_path = Movie::where('movie_id',$id)->first()->movie_background_picture;
+        Storage::delete($picture_path);
+        Storage::delete($background_picture_path);
+        
         $movies = Movie::where('movie_id', $id);
         $movies->delete();
         return redirect(route('movies.index'));
