@@ -29,5 +29,10 @@
         </div>
       </nav>
     @yield("main_content")
+    <footer class="mt-auto text-white-50">
+      <div class="card-footer bg-dark text-white text-center fw-bold">
+        © 2021 by Kenny Jinhiro
+      </div>
+    </footer>
 </body>
 </html>

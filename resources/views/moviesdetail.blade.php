@@ -5,7 +5,7 @@ FilmReviews: {{ $movies->movie_title }}
 @endsection
 
 @section('main_content')
-    <div class="heightdivdetail">
+    <div>
         <div class="backgroundimage">
         <img src="{{ asset('storage/'.$movies->movie_background_picture) }}" class="opacitylow lowbrightness objectfitdetail heightdivdetailimg">
         </div>
